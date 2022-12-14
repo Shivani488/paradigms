@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Shivani Joshi">
+        <title>Adopt A Pet</title>
+        <link rel="icon" href="https://i0.wp.com/petfinderfoundation.com/wp-content/uploads/2018/09/PFF_logo_1200x630.png?fit=1200%2C630&ssl=1" type="image/png"/> 
+
+        <!-- put this BEFORE your own script! -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.js"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- normalize.css for cross-browser stuff -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/css.css"> 
+
+    </head>
+
+
+    <body>
+        
+        <header>
+            <h1>Adopt A Pet</h1>
+            <img id="Webpage-icon" src="https://www.thesprucepets.com/thmb/PUiOZ4UQSFQBn4hGGq6caAwpEYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/top-giant-dog-breeds-1118141-hero-5dc6949626fd452a92f6434ba7aed692.jpg" alt="website logo">
+        </header>
+
+        <nav>
+            <div id="hamburger-menu">
+                <a href="#"><i class="fa fa-bars" aria-label="menu"></i></a>
+            </div>
+            <div id="navigation-links">
+                <li class="nav-bar"><a class="link" href="#about">About</a></li>
+                <li class="nav-bar"><a class="link" href="#current feed">Current Feed</a></li>
+                <li class="nav-bar"><a class="link" href="#important feed">Important Feed</a></li>
+                <li class="nav-bar"><a class="link" href="#saved">Saved</a></li>
+                <li class="nav-bar"><a class="link" href="#notifications">Notifications</a></li>
+                <li class="nav-bar"><a class="link" href="#pet's's profile">Pet's Profile</a></li>
+            </div>
+            <button class="login-btn" type="login" aria-label="button to sign up or login">Login/ Sign up</button>
+        </nav>
+
+        <main class="container">
+
+            <div class="searchD3">
+                <p>Seach state name to find pets near you</p>
+                <input class="search" type="text" placeholder="Search" name="search_input">
+                <input class="follow-btn" id="search-btn" type="button" aria-label="search " value="search">
+
+            </div>
+
+
+            <div class="user-input">
+                <form>
+                    <label for="headline_input">Leave a comment on our Pets!</label> 
+                    <input class="post" id="headline_input" type="text" placeholder="Type something..." name="headline_input">
+                    <textarea class="post" id='feed_input' name="main_input" cols="40" rows="5"></textarea>
+                    <div class="flex-container">
+                        <input class="form-btn" id="submit_button" type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+
+            
+        </main>
+
+        <footer>
+            <!-- Author Info -->
+            <p>This webapp was created by Shivani Joshi.</p>
+            <address>
+            Contact me at <a href="mailto:sjoshi18@gwu.edu">sjoshi18@gwu.edu</a>.
+            </address>
+            <p>&copy 2022 Shivani Joshi.</p>
+        
+        </footer> 
+        <!-- javascript -->
+        <script src="js/exampleJS.js"></script>
+    </body>
+</html>
