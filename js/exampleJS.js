@@ -15,6 +15,7 @@ searchBtn.addEventListener('click', function() {
                 li.append(`<span>: ${d.Age}</span>`);
                 li.append(`<span>: ${d.Gender}</span>`);
                 li.append(`<span>: ${d.PhotoAmt}</span>`);
+                li.append(`<img src=${d.PhotoAmt}></img>`);
                 $('.searchD3').append(li);
             }
         });
