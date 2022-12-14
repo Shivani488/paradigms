@@ -8,7 +8,7 @@ searchBtn.addEventListener('click', function() {
         console.log(data);
 
         data.map(function(d) {
-            if (d.County == searchQuery.value) {
+            if (d.State == searchQuery.value) {
                 let li = $('<li>');
                 li.append(`<span> ${d.State}</span>`);
                 li.append(`<span>: ${d.Name}</span>`);
