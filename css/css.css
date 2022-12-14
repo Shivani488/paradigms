@@ -1,0 +1,270 @@
+* { box-sizing: border-box; } 
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;   
+}
+
+#hamburger-menu a{
+    color: #b658d5;
+    font-size: 2.5rem;
+    margin: .5rem;
+}
+
+.login-btn {
+    display: none;  
+}
+
+
+header {
+    display: flex; 
+    justify-content: center;
+}
+
+
+
+.profile-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.save-btn {
+    border: none;
+    background-color: #f5fbfc;
+    border-radius: 8px;
+}
+
+
+
+.form-btn {
+    float: left;
+    border: none;
+    background-color: #6a2b7c;
+    color: white;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.form-btn:hover {
+    background-color: #efd6ff;
+    color: black;
+}
+
+#navigation-links {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headline {
+    display: inline;
+
+    border: 2px dashed #5a0062;
+    border-radius: 15px;
+    background-color: #f3e8f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: .5em;
+    margin: .5em;
+}
+
+.full-feed {
+    display: none;
+
+    border: 2px dashed #5a0062;
+    border-radius: 15px;
+    background-color: #f3e8f9;
+    padding: .5em;
+    margin: .5em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+h4 {
+    font-size: 20px;
+}
+
+.full-feed p {
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 992px) {
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        padding: 20px;
+    }
+
+    nav a:hover {
+        font-weight: 600;
+        color:  #6a2b7c;
+        
+    }
+
+    .login-btn {
+        display: inline;
+        border: none;
+        background-color: #f3e8f9;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        margin: 1.5rem 1rem; 
+        font-size: 20px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+    } 
+
+    .login-btn:hover {
+        background-color: #6a2b7c;
+        color: white;
+    }
+
+
+
+    #navigation-links {
+        display: inline;
+        list-style-type: none;
+    }
+
+    nav {
+        flex-direction: row;
+        position: fixed;
+        background-color: #b658d5;
+        padding: .75rem;
+        width: 100%;
+        height: 60px;
+    }
+
+    .login-btn {
+        margin: .3rem;  
+        margin-left: 15rem;
+    }
+
+    .nav-bar {
+        display: inline;
+        margin-right: 1.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #Webpage-icon {
+        padding: 10px;
+        margin-left: 5px;
+
+    }
+
+    h1 {
+        font-size: 56px;
+        margin: 1.6em 1em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-picture {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+
+
+
+
+    .headline {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .full-feed {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    #first-feed {
+        margin-top: 3em;
+    }
+
+    #first-feed-full {
+        margin-top: 3em;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .full-feed p {
+        font-size: 16px;
+    }
+
+    .follow-btn {
+        font-size: 20px;
+        border: none;
+        background-color: #b658d5;
+        color: white;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+
+    form {
+        margin: 1em;
+    }
+
+    form label {
+        font-size: 24px;
+    }
+
+    .form-btn {
+        font-size: 20px;
+    }
+
+    .post {
+        width: 800px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-left: 20em;
+        margin-top: 20em;
+
+    }
+
+    .about-page {
+        margin-top: 6em;
+    }
+
+    .searchD3 {
+        margin: 1.6em;
+    }
+}
